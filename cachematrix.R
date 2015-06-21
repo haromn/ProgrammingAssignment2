@@ -1,9 +1,10 @@
 ## we define two functions: 'makeCacheMatrix' and 'cacheSolve'
-## We use the environment of 'makeCacheMatrix' to store a matrix and its inverse 
+## We use the environment created by 'makeCacheMatrix' to store a matrix and its inverse. 
 ## We have sub functions to read and write these values and we use the
-## assignment operator <<- to assign the value in the scope of the 'makeCacheMatrix'
-## function instead of the sub function environment. 
-## The second is used to get the inverse of the parameter 
+## assignment operator <<- to assign the value in the right environment 
+## ,the defining environment of the handler functions: set, get, etc.,
+## instead of the sub function environment. 
+## The second function is used to get the inverse of the parameter 
 ## (an "instance" of 'makeCacheMatrix' ex. Matrix <- makeCacheMatrix(matrix(1:4,2,2)) )
 ## by first checking if there is a stored value or computing it if there is none.
 
